@@ -9,23 +9,22 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#FFF8E7;color:#2B1A0A}
 header{background:#4A0E0E;color:#FFD700;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-header h1{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:2px}
-header h1 span{color:white;font-size:16px;letter-spacing:1px}
-nav a{color:#FFD700;text-decoration:none;margin:0 12px;font-weight:600}
-.hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200');background-size:cover;background-position:center;text-align:center;color:white;padding:90px 20px}
-.hero h2{font-family:'Playfair Display',serif;font-size:52px;color:#FFD700}
-.hero p{margin:15px 0;font-size:18px}
+header h1{font-family:'Playfair Display',serif;font-size:30px}
+header h1 span{color:white;font-size:14px}
+nav a{color:#FFD700;text-decoration:none;margin:0 10px;font-weight:600}
+.hero{background:linear-gradient(rgba(74,14,14,.85),rgba(74,14,14,.75)),url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1200');background-size:cover;background-position:center;text-align:center;color:white;padding:80px 20px}
+.hero h2{font-family:'Playfair Display',serif;font-size:48px;color:#FFD700}
+.hero p{margin:15px 0;font-size:17px}
 .btn{background:#D4AF37;color:#4A0E0E;padding:12px 28px;border:none;border-radius:30px;font-weight:700;cursor:pointer}
 .main{display:flex;gap:20px;padding:20px 5%}
 .left{flex:1}
 .sidebar{width:260px;background:#4A0E0E;color:#FFD700;padding:20px;border-radius:15px;height:fit-content}
 .sidebar h3{border-bottom:1px solid #FFD700;padding-bottom:8px;margin-bottom:12px}
 .sidebar button{display:block;width:100%;background:#FFF8E7;color:#4A0E0E;border:none;padding:10px;margin:6px 0;border-radius:8px;cursor:pointer;font-weight:600;text-align:left}
-.sidebar button:hover{background:#FFD700}
-.section-title{font-family:'Playfair Display',serif;font-size:30px;color:#4A0E0E;margin:20px 0 10px;border-left:6px solid #D4AF37;padding-left:12px}
+.section-title{font-family:'Playfair Display',serif;font-size:28px;color:#4A0E0E;margin:20px 0 10px;border-left:6px solid #D4AF37;padding-left:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:15px}
 .card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1);text-align:center;padding-bottom:12px;border:1px solid #F0D98C}
-.card img{width:100%;height:200px;object-fit:cover}
+.card img{width:100%;height:210px;object-fit:cover}
 .card h4{margin:8px 0 2px;font-size:14px}
 .card p{color:#B8860B;font-weight:700}
 .card button{background:#4A0E0E;color:#FFD700;border:none;padding:7px 14px;border-radius:20px;margin-top:6px;cursor:pointer}
@@ -36,7 +35,7 @@ nav a{color:#FFD700;text-decoration:none;margin:0 12px;font-weight:600}
 .cat-card div b{color:#FFD700;font-size:20px}
 footer{background:#4A0E0E;color:#FFD700;text-align:center;padding:25px;margin-top:30px}
 .hidden{display:none}
-@media(max-width:800px){.main{flex-direction:column}.sidebar{width:100%}.hero h2{font-size:34px}}
+@media(max-width:800px){.main{flex-direction:column}.sidebar{width:100%}.hero h2{font-size:32px}}
 </style>
 </head>
 <body>
@@ -48,33 +47,29 @@ footer{background:#4A0E0E;color:#FFD700;text-align:center;padding:25px;margin-to
 
 <div class="hero">
 <h2>Wear Royalty, Feel Divine</h2>
-<p>Premium Cotton • Silk • Banarasi • Georgette | 200+ Designs</p>
+<p>Premium Cotton • Silk • Banarasi • Georgette | Only Saree Products</p>
 <button class="btn" onclick="document.getElementById('sarees').scrollIntoView()">Shop Now 👑</button>
 </div>
 
 <div class="main">
 <div class="left">
 
-<!-- SAREE CATEGORIES -->
 <h2 class="section-title" id="sarees">✦ Shop By Saree - Click Any Category</h2>
 <div class="cat-grid" id="catGrid"></div>
 
 <div id="sareeResult" class="hidden">
 <h2 class="section-title" id="sareeTitle">Sarees</h2>
-<p style="margin-bottom:12px">Showing <b>50</b> Designs • Click Add to Cart</p>
+<p style="margin-bottom:12px">Showing <b>50</b> Designs • Only Saree Item Photos</p>
 <div class="grid" id="sareeGrid"></div>
 <button class="btn" onclick="showCats()" style="margin-top:15px">← Back to Categories</button>
 </div>
 
-<!-- BLOUSE -->
 <h2 class="section-title" id="blouse">👗 Blouse Section - 10 Designs</h2>
 <div class="grid" id="blouseGrid"></div>
 
-<!-- DUPATTA -->
 <h2 class="section-title" id="dupatta">🧣 Dupatta Section - 20 Designs</h2>
 <div class="grid" id="dupattaGrid"></div>
 
-<!-- JEWELLERY -->
 <h2 class="section-title" id="jewellery">💎 Jewellery Section</h2>
 <div class="cat-grid" id="jewelGrid"></div>
 <div id="jewelResult" class="hidden">
@@ -84,7 +79,6 @@ footer{background:#4A0E0E;color:#FFD700;text-align:center;padding:25px;margin-to
 
 </div>
 
-<!-- SIDEBAR -->
 <div class="sidebar">
 <h3>👑 Quick Menu</h3>
 <button onclick="openCategory('Cotton')">🧵 Cotton Sarees - 50</button>
@@ -103,21 +97,26 @@ footer{background:#4A0E0E;color:#FFD700;text-align:center;padding:25px;margin-to
 
 <script>
 let cart=0;
+// ONLY FABRIC / SAREE ITEM PHOTOS - NO MODELS
 const imgs=[
-"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400",
-"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400",
-"https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400",
-"https://images.unsplash.com/photo-1610189844802-1a5a0a0a0a0a?w=400",
-"https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",
-"https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400"
+"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&auto=format&fit=crop&q=80", // fabric rolls
+"https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=80", // colourful fabric
+"https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&auto=format&fit=crop&q=80", // silk fabric
+"https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&auto=format&fit=crop&q=80", // folded fabric
+"https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?w=400&auto=format&fit=crop&q=80", // textile
+"https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&auto=format&fit=crop&q=80", // silk cloth
+"https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&auto=format&fit=crop&q=80", // fabric
+"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&auto=format&fit=crop&q=80",
+"https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=80",
+"https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&auto=format&fit=crop&q=80"
 ];
-function img(i){return imgs[i%imgs.length]+"&auto=format&fit=crop&q=80"}
+function img(i){return imgs[i%imgs.length]}
 
 const cats=[
-{name:"Cotton",price:899,img:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600"},
-{name:"Silk",price:2499,img:"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600"},
-{name:"Banarasi",price:3999,img:"https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600"},
-{name:"Georgette",price:1299,img:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600"},
+{name:"Cotton",price:899,img:imgs[1]},
+{name:"Silk",price:2499,img:imgs[2]},
+{name:"Banarasi",price:3999,img:imgs[5]},
+{name:"Georgette",price:1299,img:imgs[0]},
 ];
 let catHTML="";
 cats.forEach(c=>{catHTML+=`<div class="cat-card" onclick="openCategory('${c.name}')"><img src="${c.img}"><div><b>${c.name} Sarees</b><br>50 Designs • From ₹${c.price}</div></div>`});
@@ -129,7 +128,7 @@ document.getElementById('sareeResult').classList.remove('hidden');
 document.getElementById('sareeTitle').innerText=name+" Sarees - 50 Designs";
 let h="";
 for(let i=1;i<=50;i++){
-let price = name=="Cotton"?799+ (i*20): name=="Silk"?1999+(i*35): name=="Banarasi"?2999+(i*45):999+(i*25);
+let price = name=="Cotton"?799+(i*20): name=="Silk"?1999+(i*35): name=="Banarasi"?2999+(i*45):999+(i*25);
 h+=`<div class="card"><img src="${img(i)}"><h4>${name} Saree ${i}</h4><p>₹${price} <s style="color:grey;font-size:12px">₹${price+800}</s></p><button onclick="addCart()">Add to Cart</button></div>`;
 }
 document.getElementById('sareeGrid').innerHTML=h;
@@ -138,18 +137,15 @@ document.getElementById('sareeResult').scrollIntoView();
 function showCats(){document.getElementById('catGrid').classList.remove('hidden');document.getElementById('sareeResult').classList.add('hidden');}
 function addCart(){cart++;document.getElementById('cart').innerText=cart;alert("Added to Cart! 🛒 Total: "+cart);}
 
-// BLOUSE 10
 let bNames=["Boat Neck","Sweetheart Neck","Elbow Sleeve","Princess Cut","High Neck","Backless","Puff Sleeve","Mirror Work","Katori Blouse","Designer Net"];
 let bHTML="";
 bNames.forEach((n,i)=>{bHTML+=`<div class="card"><img src="${img(i+2)}"><h4>${n} Blouse</h4><p>₹${499+i*50}</p><button onclick="addCart()">Add</button></div>`});
 document.getElementById('blouseGrid').innerHTML=bHTML;
 
-// DUPATTA 20
 let dHTML="";
 for(let i=1;i<=20;i++){dHTML+=`<div class="card"><img src="${img(i+5)}"><h4>Dupatta Design ${i} - ${i%2==0?"Phulkari":"Bandhani"}</h4><p>₹${299+i*20}</p><button onclick="addCart()">Add</button></div>`}
 document.getElementById('dupattaGrid').innerHTML=dHTML;
 
-// JEWELLERY
 const jewels=[
 {name:"Kundan",desc:"Royal Kundan Sets"},
 {name:"Temple Jewellery",desc:"South Indian Temple"},
@@ -159,13 +155,13 @@ const jewels=[
 {name:"Jhumka",desc:"Jhumka Earrings"},
 ];
 let jHTML="";
-jewels.forEach((j,i)=>{jHTML+=`<div class="cat-card" onclick="openJewel('${j.name}')"><img src="${img(i+10)}"><div><b>${j.name}</b><br>${j.desc}</div></div>`});
+jewels.forEach((j,i)=>{jHTML+=`<div class="cat-card" onclick="openJewel('${j.name}')"><img src="${img(i+3)}"><div><b>${j.name}</b><br>${j.desc}</div></div>`});
 document.getElementById('jewelGrid').innerHTML=jHTML;
 function openJewel(name){
 document.getElementById('jewelResult').classList.remove('hidden');
 document.getElementById('jewelTitle').innerText=name+" Jewellery - 8 Designs";
 let h="";
-for(let i=1;i<=8;i++){h+=`<div class="card"><img src="${img(i+15)}"><h4>${name} Set ${i}</h4><p>₹${799+i*150}</p><button onclick="addCart()">Add</button></div>`}
+for(let i=1;i<=8;i++){h+=`<div class="card"><img src="${img(i+7)}"><h4>${name} Set ${i}</h4><p>₹${799+i*150}</p><button onclick="addCart()">Add</button></div>`}
 document.getElementById('jewelItems').innerHTML=h;
 }
 </script>
