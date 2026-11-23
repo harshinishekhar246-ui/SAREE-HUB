@@ -3,167 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saree Hub - Royal Collection</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Harshini | Portfolio - Farewell Celebration</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#FFF8E7;color:#2B1A0A}
-header{background:#4A0E0E;color:#FFD700;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-header h1{font-family:'Playfair Display',serif;font-size:30px}
-header h1 span{color:white;font-size:14px}
-nav a{color:#FFD700;text-decoration:none;margin:0 10px;font-weight:600}
-.hero{background:linear-gradient(rgba(74,14,14,.85),rgba(74,14,14,.75)),url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1200');background-size:cover;background-position:center;text-align:center;color:white;padding:80px 20px}
-.hero h2{font-family:'Playfair Display',serif;font-size:48px;color:#FFD700}
-.hero p{margin:15px 0;font-size:17px}
-.btn{background:#D4AF37;color:#4A0E0E;padding:12px 28px;border:none;border-radius:30px;font-weight:700;cursor:pointer}
-.main{display:flex;gap:20px;padding:20px 5%}
-.left{flex:1}
-.sidebar{width:260px;background:#4A0E0E;color:#FFD700;padding:20px;border-radius:15px;height:fit-content}
-.sidebar h3{border-bottom:1px solid #FFD700;padding-bottom:8px;margin-bottom:12px}
-.sidebar button{display:block;width:100%;background:#FFF8E7;color:#4A0E0E;border:none;padding:10px;margin:6px 0;border-radius:8px;cursor:pointer;font-weight:600;text-align:left}
-.section-title{font-family:'Playfair Display',serif;font-size:28px;color:#4A0E0E;margin:20px 0 10px;border-left:6px solid #D4AF37;padding-left:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:15px}
-.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1);text-align:center;padding-bottom:12px;border:1px solid #F0D98C}
-.card img{width:100%;height:210px;object-fit:cover}
-.card h4{margin:8px 0 2px;font-size:14px}
-.card p{color:#B8860B;font-weight:700}
-.card button{background:#4A0E0E;color:#FFD700;border:none;padding:7px 14px;border-radius:20px;margin-top:6px;cursor:pointer}
-.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:15px}
-.cat-card{height:230px;border-radius:15px;overflow:hidden;position:relative;cursor:pointer}
-.cat-card img{width:100%;height:100%;object-fit:cover}
-.cat-card div{position:absolute;bottom:0;width:100%;background:linear-gradient(transparent,#4A0E0E);color:white;padding:35px 15px 12px}
-.cat-card div b{color:#FFD700;font-size:20px}
-footer{background:#4A0E0E;color:#FFD700;text-align:center;padding:25px;margin-top:30px}
-.hidden{display:none}
-@media(max-width:800px){.main{flex-direction:column}.sidebar{width:100%}.hero h2{font-size:32px}}
+body{background:#EDE3FF;color:#2D1B4E}
+header{background:#4B1D7A;color:white;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+header b{font-family:'Great Vibes',cursive;font-size:30px;color:#E9D5FF}
+nav a{color:white;text-decoration:none;margin:0 10px;font-weight:600;font-size:14px}
+.hero{display:flex;gap:30px;padding:40px 5%;background:linear-gradient(135deg,#C4B5FD,#F5D0FE,#EDE9FE);align-items:center;flex-wrap:wrap}
+.hero-left{flex:1;min-width:280px}
+.hero-left h3{font-family:'Great Vibes',cursive;font-size:32px}
+.hero-left h1{font-family:'Playfair Display',serif;font-size:62px;color:#4B1D7A;line-height:1;text-shadow:2px 2px 0 #fff}
+.hero-left h1 span{font-size:32px;color:#7C3AED}
+.hero-left p{margin:15px 0;font-size:16px;line-height:1.6}
+.badge{background:#4B1D7A;color:white;padding:8px 18px;border-radius:30px;display:inline-block;font-weight:700}
+.photo-box{flex:1;min-width:280px;max-width:420px;position:relative}
+.photo-box img{width:100%;border:8px solid white;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25);transform:rotate(2deg);object-fit:cover;height:480px}
+.photo-box div{position:absolute;bottom:20px;left:-10px;background:#4B1D7A;color:white;padding:10px 20px;border-radius:0 20px 20px 0;font-family:'Great Vibes',cursive;font-size:26px}
+.btn{background:#4B1D7A;color:white;padding:12px 26px;border:none;border-radius:30px;font-weight:700;cursor:pointer;margin:5px;text-decoration:none;display:inline-block}
+.btn2{background:white;color:#4B1D7A}
+.section{padding:35px 5%}
+.title{font-family:'Playfair Display',serif;font-size:36px;color:#4B1D7A;margin-bottom:12px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px}
+.card{background:white;padding:20px;border-radius:18px;box-shadow:0 4px 15px rgba(0,0,0,.08);text-align:center}
+.card span{font-size:35px}
+.card h3{margin:10px 0 5px;color:#4B1D7A}
+.card p{font-size:14px;color:#555}
+.invite{background:#4B1D7A;color:white;border-radius:20px;padding:30px;text-align:center}
+.invite h2{font-family:'Playfair Display',serif;font-size:44px;color:#E9D5FF}
+.invite p{margin:10px 0}
+.info{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:15px}
+.info div{background:white;color:#4B1D7A;padding:15px 20px;border-radius:15px;min-width:170px}
+.info div b{font-size:22px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:15px;border:4px solid white}
+footer{background:#2D1B4E;color:#E9D5FF;text-align:center;padding:25px}
+footer h2{font-family:'Great Vibes',cursive;font-size:32px}
+@media(max-width:700px){.hero-left h1{font-size:42px}.photo-box img{height:360px}}
 </style>
 </head>
 <body>
 
 <header>
-<h1>SAREE HUB <span>✦ Royal Collection ✦</span></h1>
-<nav><a href="#sarees">Sarees</a><a href="#blouse">Blouse</a><a href="#dupatta">Dupatta</a><a href="#jewellery">Jewellery</a></nav>
+<b>Harshini ♡</b>
+<nav><a href="#about">About</a><a href="#memories">Memories</a><a href="#gallery">Gallery</a><a href="#farewell">Farewell</a></nav>
 </header>
 
-<div class="hero">
-<h2>Wear Royalty, Feel Divine</h2>
-<p>Premium Cotton • Silk • Banarasi • Georgette | Only Saree Products</p>
-<button class="btn" onclick="document.getElementById('sarees').scrollIntoView()">Shop Now 👑</button>
+<!-- HERO - SAME PIC CAPTURE -->
+<section class="hero">
+<div class="hero-left">
+<h3>You are cordially invited to our</h3>
+<h1>Farewell<br><span>Celebration ♡</span></h1>
+<p>“A new chapter begins,<br>but the memories will always stay...”</p>
+<span class="badge">✦ Believe ♡ ✦</span>
+<br><br>
+<a class="btn" href="#about">View My Portfolio ↓</a>
+<a class="btn btn2" href="#farewell">Farewell Details</a>
 </div>
 
-<div class="main">
-<div class="left">
-
-<h2 class="section-title" id="sarees">✦ Shop By Saree - Click Any Category</h2>
-<div class="cat-grid" id="catGrid"></div>
-
-<div id="sareeResult" class="hidden">
-<h2 class="section-title" id="sareeTitle">Sarees</h2>
-<p style="margin-bottom:12px">Showing <b>50</b> Designs • Only Saree Item Photos</p>
-<div class="grid" id="sareeGrid"></div>
-<button class="btn" onclick="showCats()" style="margin-top:15px">← Back to Categories</button>
+<div class="photo-box">
+<!-- CHANGE photo.jpg to your photo name -->
+<img src="photo.jpg" alt="Harshini">
+<div>Good Bye... ♡</div>
 </div>
+</section>
 
-<h2 class="section-title" id="blouse">👗 Blouse Section - 10 Designs</h2>
-<div class="grid" id="blouseGrid"></div>
-
-<h2 class="section-title" id="dupatta">🧣 Dupatta Section - 20 Designs</h2>
-<div class="grid" id="dupattaGrid"></div>
-
-<h2 class="section-title" id="jewellery">💎 Jewellery Section</h2>
-<div class="cat-grid" id="jewelGrid"></div>
-<div id="jewelResult" class="hidden">
-<h2 class="section-title" id="jewelTitle"></h2>
-<div class="grid" id="jewelItems"></div>
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2 class="title">About Me 💜</h2>
+<p style="max-width:700px;line-height:1.7">Hello! I'm <b>Harshini</b> from BCWD Hostel, Ashok Nagar. I believe in dreams, friendship and new beginnings. This portfolio is a small capture of my journey, my memories, my friends and my farewell celebration. Thank you for being a part of my beautiful journey!</p>
+<br>
+<div class="card-grid">
+<div class="card"><span>🎓</span><h3>Student</h3><p>ECE 24-28<br>AJIET</p></div>
+<div class="card"><span>💜</span><h3>Believe</h3><p>Believe in yourself<br>Always stay positive</p></div>
+<div class="card"><span>👩‍💻</span><h3>Creator</h3><p>Web Design<br>Saree Hub Project</p></div>
+<div class="card"><span>✨</span><h3>Dreamer</h3><p>New Chapter<br>New Dreams</p></div>
 </div>
+</section>
 
+<!-- MEMORIES -->
+<section class="section" id="memories" style="background:white">
+<h2 class="title">My Memories ✨</h2>
+<div class="card-grid">
+<div class="card"><span>🏫</span><h3>Hostel Life</h3><p>Room No. 212-13<br>Best days with best friends</p></div>
+<div class="card"><span>🎉</span><h3>College Days</h3><p>Fun, laughs, exams<br>& unforgettable moments</p></div>
+<div class="card"><span>💐</span><h3>Friendship</h3><p>Friends who became family</p></div>
+<div class="card"><span>🌸</span><h3>Farewell</h3><p>Nov 25 - A warm goodbye<br>and new beginning</p></div>
 </div>
+</section>
 
-<div class="sidebar">
-<h3>👑 Quick Menu</h3>
-<button onclick="openCategory('Cotton')">🧵 Cotton Sarees - 50</button>
-<button onclick="openCategory('Silk')">✨ Silk Sarees - 50</button>
-<button onclick="openCategory('Banarasi')">👑 Banarasi Sarees - 50</button>
-<button onclick="openCategory('Georgette')">🌸 Georgette Sarees - 50</button>
-<button onclick="document.getElementById('blouse').scrollIntoView()">👗 Blouse - 10 Designs</button>
-<button onclick="document.getElementById('dupatta').scrollIntoView()">🧣 Dupatta - 20 Designs</button>
-<button onclick="document.getElementById('jewellery').scrollIntoView()">💎 Jewellery</button>
-<h3 style="margin-top:20px">🛒 Cart: <span id="cart">0</span> Items</h3>
-<p style="font-size:13px;color:white">Free Delivery Over ₹999<br>Cash On Delivery Available<br>📞 +91 98XXX XXXXX</p>
+<!-- GALLERY - SAME PIC -->
+<section class="section" id="gallery">
+<h2 class="title">Gallery 📸</h2>
+<p style="margin-bottom:12px">Same pic capture - add more photos by copying the img line</p>
+<div class="gallery">
+<img src="photo.jpg">
+<img src="photo.jpg">
+<img src="photo.jpg">
+<img src="photo.jpg">
 </div>
+</section>
+
+<!-- FAREWELL INVITE - SAME AS YOUR POSTER -->
+<section class="section" id="farewell">
+<div class="invite">
+<h3 style="font-family:'Great Vibes',cursive;font-size:28px">You are cordially invited to our</h3>
+<h2>Farewell Celebration ♡</h2>
+<p>“A new chapter begins, but the memories will always stay...”</p>
+<p>Let's come together to bid a warm goodbye and celebrate the beautiful journey ahead!</p>
+<div class="info">
+<div>📅<br><b>Date:</b><br>Nov 25</div>
+<div>📍<br><b>Venue:</b><br>BCWD Hostel<br>Ashok Nagar<br>Room No. 212-13</div>
+<div>🕗<br><b>Time:</b><br>8.50 PM</div>
 </div>
+<br>
+<p style="font-family:'Great Vibes',cursive;font-size:26px">Your Presence will make our Farewell more special...! ♡</p>
+</div>
+</section>
 
-<footer><h2>SAREE HUB</h2><p>Where Tradition Meets Royalty • Ramanagara, Karnataka</p></footer>
+<footer>
+<h2>Good Bye... ♡</h2>
+<p>Harshini | Believe ♡ | Farewell 2026</p>
+<p style="font-size:13px;margin-top:8px">Made with 💜 in Ramanagara, Karnataka</p>
+</footer>
 
-<script>
-let cart=0;
-// ONLY FABRIC / SAREE ITEM PHOTOS - NO MODELS
-const imgs=[
-"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&auto=format&fit=crop&q=80", // fabric rolls
-"https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=80", // colourful fabric
-"https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&auto=format&fit=crop&q=80", // silk fabric
-"https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&auto=format&fit=crop&q=80", // folded fabric
-"https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?w=400&auto=format&fit=crop&q=80", // textile
-"https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&auto=format&fit=crop&q=80", // silk cloth
-"https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&auto=format&fit=crop&q=80", // fabric
-"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&auto=format&fit=crop&q=80",
-"https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=80",
-"https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&auto=format&fit=crop&q=80"
-];
-function img(i){return imgs[i%imgs.length]}
-
-const cats=[
-{name:"Cotton",price:899,img:imgs[1]},
-{name:"Silk",price:2499,img:imgs[2]},
-{name:"Banarasi",price:3999,img:imgs[5]},
-{name:"Georgette",price:1299,img:imgs[0]},
-];
-let catHTML="";
-cats.forEach(c=>{catHTML+=`<div class="cat-card" onclick="openCategory('${c.name}')"><img src="${c.img}"><div><b>${c.name} Sarees</b><br>50 Designs • From ₹${c.price}</div></div>`});
-document.getElementById('catGrid').innerHTML=catHTML;
-
-function openCategory(name){
-document.getElementById('catGrid').classList.add('hidden');
-document.getElementById('sareeResult').classList.remove('hidden');
-document.getElementById('sareeTitle').innerText=name+" Sarees - 50 Designs";
-let h="";
-for(let i=1;i<=50;i++){
-let price = name=="Cotton"?799+(i*20): name=="Silk"?1999+(i*35): name=="Banarasi"?2999+(i*45):999+(i*25);
-h+=`<div class="card"><img src="${img(i)}"><h4>${name} Saree ${i}</h4><p>₹${price} <s style="color:grey;font-size:12px">₹${price+800}</s></p><button onclick="addCart()">Add to Cart</button></div>`;
-}
-document.getElementById('sareeGrid').innerHTML=h;
-document.getElementById('sareeResult').scrollIntoView();
-}
-function showCats(){document.getElementById('catGrid').classList.remove('hidden');document.getElementById('sareeResult').classList.add('hidden');}
-function addCart(){cart++;document.getElementById('cart').innerText=cart;alert("Added to Cart! 🛒 Total: "+cart);}
-
-let bNames=["Boat Neck","Sweetheart Neck","Elbow Sleeve","Princess Cut","High Neck","Backless","Puff Sleeve","Mirror Work","Katori Blouse","Designer Net"];
-let bHTML="";
-bNames.forEach((n,i)=>{bHTML+=`<div class="card"><img src="${img(i+2)}"><h4>${n} Blouse</h4><p>₹${499+i*50}</p><button onclick="addCart()">Add</button></div>`});
-document.getElementById('blouseGrid').innerHTML=bHTML;
-
-let dHTML="";
-for(let i=1;i<=20;i++){dHTML+=`<div class="card"><img src="${img(i+5)}"><h4>Dupatta Design ${i} - ${i%2==0?"Phulkari":"Bandhani"}</h4><p>₹${299+i*20}</p><button onclick="addCart()">Add</button></div>`}
-document.getElementById('dupattaGrid').innerHTML=dHTML;
-
-const jewels=[
-{name:"Kundan",desc:"Royal Kundan Sets"},
-{name:"Temple Jewellery",desc:"South Indian Temple"},
-{name:"Pearl",desc:"Elegant Pearl Sets"},
-{name:"Oxidised",desc:"Trendy Oxidised"},
-{name:"Gold Plated",desc:"Bridal Gold Plated"},
-{name:"Jhumka",desc:"Jhumka Earrings"},
-];
-let jHTML="";
-jewels.forEach((j,i)=>{jHTML+=`<div class="cat-card" onclick="openJewel('${j.name}')"><img src="${img(i+3)}"><div><b>${j.name}</b><br>${j.desc}</div></div>`});
-document.getElementById('jewelGrid').innerHTML=jHTML;
-function openJewel(name){
-document.getElementById('jewelResult').classList.remove('hidden');
-document.getElementById('jewelTitle').innerText=name+" Jewellery - 8 Designs";
-let h="";
-for(let i=1;i<=8;i++){h+=`<div class="card"><img src="${img(i+7)}"><h4>${name} Set ${i}</h4><p>₹${799+i*150}</p><button onclick="addCart()">Add</button></div>`}
-document.getElementById('jewelItems').innerHTML=h;
-}
-</script>
 </body>
 </html>
